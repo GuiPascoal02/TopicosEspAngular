@@ -1,0 +1,14 @@
+<div class="col-sx-12" style="height:50px"></div>
+
+<div class="row">
+    <div class="col-sm-3" *ngFor="let perfil of perfis | async">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Descrição: {{ perfil.descricao }} </h5>
+                <p class="card-text">Texto de exemplo</p>
+                <a href="#" class="mr-1 btn btn-primary">Visualizar</a>
+                <a href="#" class="btn btn-danger">Apagar</a>
+            </div>
+        </div>
+    </div>
+</div>

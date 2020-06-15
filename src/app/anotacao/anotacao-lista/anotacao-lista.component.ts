@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+
+import { Anotacao } from '../anotacao.interface';
+import { Observable } from 'rxjs';
+import { AnotacaoRoutingModule } from '../anotacao-routing.module';
+import { AnotacaoService } from '../anotacao.service';
+
+@Component({
+  selector: 'app-anotacao-lista',
+  templateUrl: './anotacao-lista.component.html',
+  styleUrls: ['./anotacao-lista.component.css']
+})
+export class AnotacaoListaComponent implements OnInit {
+
+  anotacoes : Observable<Anotacao>;
+
+  constructor(private servico: AnotacaoService) { }
+
+  ngOnInit(): void {
+    this.anotacoes = this.servico.getAnotacao();
+  }
+
+}

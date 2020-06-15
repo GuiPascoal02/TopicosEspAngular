@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">UniBH</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+    <span class="navbar-toggle-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home</a>
+      <a class="nav-item nav-link" [routerLink]="['/pessoas']" routerLinkActive="active">Pessoa</a>
+      <a class="nav-item nav-link" [routerLink]="['/anotacao']" routerLinkActive="active">Anotacao</a>
+      <a class="nav-item nav-link" [routerLink]="['/grupo']" routerLinkActive="active">Grupo</a>
+      <a class="nav-item nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a>
+      <a class="nav-item nav-link" [routerLink]="['/perfil']" routerLinkActive="active">Perfil</a>
+      <a class="nav-item nav-link" [routerLink]="['/perfilRecurso']" routerLinkActive="active">Perfil Recurso</a>
+      <a class="nav-item nav-link" [routerLink]="['/pessoaGrupo']" routerLinkActive="active">Pessoa Grupo</a>
+      <a class="nav-item nav-link" [routerLink]="['/recurso']" routerLinkActive="active">Recurso</a>
+    </div>
+  </div>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>
